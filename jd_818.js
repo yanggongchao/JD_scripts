@@ -49,7 +49,7 @@ if ($.isNode()) {
 }
 
 const JD_API_HOST = 'https://rdcseason.m.jd.com/api/';
-const activeEndTime = '2020/11/13 01:00:00+08:00';
+const activeEndTime = '2020/11/11 23:59:59+08:00';
 const addUrl = 'http://jd.turinglabs.net/helpcode/create/';
 const printUrl = `http://jd.turinglabs.net/helpcode/print/20/`;
 let helpCode = []
@@ -169,7 +169,7 @@ function listMeeting() {
             }
             console.log(`逛会场--获得积分:${integralNum}`)
             console.log(`逛会场--获得京豆:${jdNum}`)
-        }
+          }
         }
       } catch (e) {
         $.logErr(e, resp);
